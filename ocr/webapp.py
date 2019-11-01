@@ -23,6 +23,11 @@ def about():
     return render_template('about.html', title='About')
 
 
+@app.route("/plan")
+def plan():
+    return render_template('plan.html', title='Plan')
+
+
 @app.route("/register", methods=['GET', 'POST'])
 def register():
     form = RegistrationForm()
